@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+//My cchanges from here
+-->  used command git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch src/Assets/images/Photos-001/' HEAD to delete history large files.
+ 
