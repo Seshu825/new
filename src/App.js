@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter,HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Nav from "./components/Nav";
@@ -22,7 +22,7 @@ import FallingShapes from "./components/Fallingshapes";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Nav />
         {/* <FallingShapes/> */}
         {/* <ToastContainer position="top-center"/> */}
@@ -40,7 +40,7 @@ function App() {
           <Route exact path="*" element={<NotFound/>}/>
           {/* <Route exact path="/Toast" element={<Exptoas/>}/> */}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
