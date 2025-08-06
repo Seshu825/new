@@ -22,7 +22,7 @@ import FallingShapes from "./components/Fallingshapes";
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter basename="/new">
         <Nav />
         {/* <FallingShapes/> */}
         {/* <ToastContainer position="top-center"/> */}
@@ -40,7 +40,7 @@ function App() {
           <Route exact path="*" element={<NotFound/>}/>
           {/* <Route exact path="/Toast" element={<Exptoas/>}/> */}
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
